@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Calculator</h1>
+    <p id="description">This calculator performs basic arithmetic operations.</p>
+    <input id="result" class="form-control" type="text" readonly>
+    <div class="calculator">
+      <input id="display" class="form-control" type="text" readonly>
+      <div class="keys">
+        <button id="7" class="btn btn-primary" onclick="handleNumber(7)">7</button>
+        <button id="8" class="btn btn-primary" onclick="handleNumber(8)">8</button>
+        <button id="9" class="btn btn-primary" onclick="handleNumber(9)">9</button>
+        <button id="4" class="btn btn-primary" onclick="handleNumber(4)">4</button>
+        <button id="5" class="btn btn-primary" onclick="handleNumber(5)">5</button>
+        <button id="6" class="btn btn-primary" onclick="handleNumber(6)">6</button>
+        <button id="1" class="btn btn-primary" onclick="handleNumber(1)">1</button>
+        <button id="2" class="btn btn-primary" onclick="handleNumber(2)">2</button>
+        <button id="3" class="btn btn-primary" onclick="handleNumber(3)">3</button>
+        <button id="0" class="btn btn-primary" onclick="handleNumber(0)">0</button>
+        <button id="multiply" class="btn btn-warning" onclick="handleOperation('*')">*</button>
+        <button id="divide" class="btn btn-warning" onclick="handleOperation('/')">/</button>
+        <button id="add" class="btn btn-warning" onclick="handleOperation('+')">+</button>
+        <button id="subtract" class="btn btn-warning" onclick="handleOperation('-')">-</button>
+        <button id="clear" class="btn btn-danger" onclick="clearDisplay()">C</button>
+        <button id="equal" class="btn btn-success" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="calculator.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
