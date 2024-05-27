@@ -1,5 +1,5 @@
 // Fetch the data from the API
-var res = fetch("https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json");
+var res = fetch("https://restcountries.com/v3.1/all");
 res.then((data) => {
     return data.json();
 }).then((data1) => foo(data1)).catch((error) => console.log(error));
