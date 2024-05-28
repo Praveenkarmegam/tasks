@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Launch Tracker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./task2.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 text-center">SpaceX Launch Tracker</h1>
+        <p class="lead text-center">Enter the name of the SpaceX launch you are interested in and click "Search Launches" to see the details.</p>
+        <p class="lead text-center"> Falcon | Falcon 9 | Falcon Heavy | Starlink | SAOCOM 1B | Transporter | GPS | CRS |</p>
+        <div class="input-group mb-3">
+            <input type="text" id="launch-name" class="form-control" placeholder="Enter launch name">
+            <div class="input-group-append">
+                <button id="fetch-launches" class="btn btn-primary">Search Launches</button>
+            </div>
+        </div>
+        <div class="row" id="launches-container"></div>
+    </div>
+    <script src="./task2.js"></script>
+</body>
+</html>

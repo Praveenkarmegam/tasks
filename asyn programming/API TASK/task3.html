@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./task3.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 text-center">Weather Forecast</h1>
+        <p class="lead text-center">Enter a city name to get the current weather forecast:</p>
+        <p>New York | London | Tokyo | Paris | Sydney | Dubai | Los Angeles | Beijing | Rome | Moscow</p>
+        <div class="input-group mb-3">
+            <input type="text" id="city-name" class="form-control" placeholder="Enter city name">
+            <div class="input-group-append">
+                <button id="fetch-weather" class="btn btn-primary">Get Weather</button>
+            </div>
+        </div>
+        <div id="weather-info" class="text-center"></div>
+    </div>
+    <script src="./task3.js"></script>
+</body>
+</html>
